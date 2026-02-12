@@ -1,10 +1,13 @@
+import { Routes, Route } from "react-router-dom";
+import Blog from "./pages/Blog";
+import TaxViz from "./pages/TaxViz";
+
 function App() {
   return (
-    <>
-      <h1 className="text-2xl sm:text-4xl font-bold my-5 text-center">
-        Blog
-      </h1>
-    </>
+    <Routes>
+      <Route path="/" element={<Blog />} />
+      <Route path="/taxviz" element={<TaxViz />} />
+    </Routes>
   );
 }
 
