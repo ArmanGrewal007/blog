@@ -9,7 +9,7 @@ function TaxBlog() {
         I wanted to understand whether the Old Regime is still beneficial at certain
         salary levels.
       </p>
-      <br/>
+      <br />
       <p>
         The results show that for salaried professionals, the New Tax Regime is
         <strong> always</strong> more advantageous.
@@ -17,7 +17,7 @@ function TaxBlog() {
 
       <div className="flex justify-center mt-8">
         <iframe
-          src="/taxviz/chart.html"
+          src={import.meta.env.MODE === 'production' ? '/blog/taxviz/chart.html' : '/taxviz/chart.html'}
           height="500"
           title="Tax Visualizer"
           className="w-full rounded-lg border border-gray-200 shadow-md"
