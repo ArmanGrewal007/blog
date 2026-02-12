@@ -17,7 +17,7 @@ function TaxBlog() {
 
       <div className="flex justify-center mt-8">
         <iframe
-          src={import.meta.env.MODE === 'production' ? '/blog/taxviz/chart.html' : '/taxviz/chart.html'}
+          src='/blog/taxviz/chart.html'
           height="500"
           title="Tax Visualizer"
           className="w-full rounded-lg border border-gray-200 shadow-md"
