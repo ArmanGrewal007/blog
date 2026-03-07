@@ -7,7 +7,7 @@ function Home({ posts = [] }) {
 
   return (
     <motion.div
-      className="min-h-screen max-w-5xl mx-auto px-6 py-16"
+      className="min-h-screen max-w-7xl mx-auto px-6 py-16"
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -16,12 +16,13 @@ function Home({ posts = [] }) {
         Blogs ...
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {sortedPosts.map((post) => (
           <BlogCard
             key={post.slug}
             title={post.title}
             description={post.description}
+            date={post.date}
             to={`/${post.slug}`}
             image={post.image || ""}
           />

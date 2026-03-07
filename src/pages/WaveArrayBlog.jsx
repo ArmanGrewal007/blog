@@ -8,7 +8,7 @@ export const frontmatter = {
   title: "Primer on wave arrays",
   date: "2026-02-25",
   description: "Some proofs on waves in arrays ...",
-  slug: "waveArray",
+  slug: "primer-on-wave-arrays",
 };
 
 function WaveArrayBlog() {

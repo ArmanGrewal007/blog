@@ -4,7 +4,7 @@ export const frontmatter = {
   title: "Rank-Selection duality",
   date: "2026-02-25",
   description: "Rank problem is solvable in O(n), what about Selection Problem? ...",
-  slug: "rankSelection",
+  slug: "rank-selection-duality",
 };
 
 function RankSelectionBlog() {
