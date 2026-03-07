@@ -7,7 +7,7 @@ function Home() {
       className="min-h-screen max-w-5xl mx-auto px-6 py-16"
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut"  }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <h1 className="text-3xl sm:text-5xl font-bold mb-12 text-center">
         Blogs ...
@@ -30,6 +30,12 @@ function Home() {
           title="Rank-Selection duality"
           description="Rank problem is solvable in O(n), what about Selection Problem? ..."
           to="/rankSelection"
+          image=""
+        />
+        <BlogCard
+          title="BallWeigh problem"
+          description="..."
+          to="/ballweigh"
           image=""
         />
         {/* <BlogCard
