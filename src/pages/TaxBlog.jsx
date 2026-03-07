@@ -1,5 +1,12 @@
 import BlogLayout from "@/components/BlogLayout";
 
+export const frontmatter = {
+  title: "Old vs New Tax Regime Comparison - FY25-26",
+  date: "2026-02-12",
+  description: "Interactive graph to tell you which Regime to choose ...",
+  slug: "taxviz",
+};
+
 function TaxBlog() {
   return (
     <BlogLayout title="Old vs New Tax Regime Comparison - FY25-26" date="Feb 12, 2026">

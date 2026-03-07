@@ -1,18 +1,23 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "@/pages/Home";
-import TaxBlog from "@/pages/1TaxBlog";
-import WaveArrayBlog from "@/pages/2WaveArrayBlog";
-import RankSelectionBlog from "@/pages/3RankSelectionBlog";
-import BallWeighBlog from "@/pages/4BallWeighBlog";
+
+// Automatically grab all *Blog.jsx files inside the pages directory
+const postFiles = import.meta.glob('./pages/*Blog.jsx', { eager: true });
+
+const posts = Object.values(postFiles).map(file => {
+  return {
+    Component: file.default,
+    ...(file.frontmatter || {})
+  };
+});
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/taxviz" element={<TaxBlog />} />
-      <Route path="/waveArray" element={<WaveArrayBlog />} />
-      <Route path="/rankSelection" element={<RankSelectionBlog />} />
-      <Route path="/ballweigh" element={<BallWeighBlog />} />
+      <Route path="/" element={<Home posts={posts} />} />
+      {posts.map(post => (
+        <Route key={post.slug} path={`/${post.slug}`} element={<post.Component />} />
+      ))}
     </Routes>
   );
 }

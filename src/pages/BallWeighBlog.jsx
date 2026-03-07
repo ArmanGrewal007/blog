@@ -1,6 +1,13 @@
 import BlogLayout from "@/components/BlogLayout";
 import BallWeighSimulation from "@/components/ballweigh/BallWeighSimulation";
 
+export const frontmatter = {
+  title: "BallWeigh problem",
+  date: "2026-03-08",
+  description: "Find the odd ball interactively ...",
+  slug: "ballweigh",
+};
+
 function BallWeighBlog() {
   return (
     <BlogLayout title="BallWeigh Problem" date="Mar 8, 2026">

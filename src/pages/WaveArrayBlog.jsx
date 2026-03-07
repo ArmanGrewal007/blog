@@ -1,6 +1,15 @@
 import BlogLayout from "@/components/BlogLayout";
 import { InlineMath } from "react-katex";
 import CodeBlock from "@/components/CodeBlock";
+import sortedWave from "@/assets/imgs/sorted_wave.png";
+import sortedWave2 from "@/assets/imgs/sorted_wave2.png";
+
+export const frontmatter = {
+  title: "Primer on wave arrays",
+  date: "2026-02-25",
+  description: "Some proofs on waves in arrays ...",
+  slug: "waveArray",
+};
 
 function WaveArrayBlog() {
   return (
@@ -116,11 +125,11 @@ function WaveArrayBlog() {
       </div>
       <div className="grid md:grid-cols-2 gap-4 items-start">
         <figure className="text-center">
-          <img src={`${import.meta.env.BASE_URL}imgs/sorted_wave.png`} className="w-full" style={{ mixBlendMode: "multiply" }} />
+          <img src={sortedWave} className="w-full" style={{ mixBlendMode: "multiply" }} />
           <figcaption className="text-sm text-gray-700">Fig 2.1: Odd length array <InlineMath math="[10, 20, 30, 40, 50]" /></figcaption>
         </figure>
         <figure className="text-center">
-          <img src={`${import.meta.env.BASE_URL}imgs/sorted_wave2.png`} className="w-full" style={{ mixBlendMode: "multiply" }} />
+          <img src={sortedWave2} className="w-full" style={{ mixBlendMode: "multiply" }} />
           <figcaption className="text-sm text-gray-700">Fig 2.2: Even length array <InlineMath math="[10, 20, 30, 40]" /></figcaption>
         </figure>
       </div>
