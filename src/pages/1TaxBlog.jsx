@@ -2,7 +2,7 @@ import BlogLayout from "@/components/BlogLayout";
 
 function TaxBlog() {
   return (
-    <BlogLayout title="Old vs New Tax Regime Comparison - FY25-26">
+    <BlogLayout title="Old vs New Tax Regime Comparison - FY25-26" date="Feb 12, 2026">
 
       <p>
         As the Indian government gradually moves toward phasing out the Old Tax Regime,

@@ -1,18 +1,13 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const getFormattedDate = () => {
-  const options = { year: "numeric", month: "short", day: "numeric" };
-  return new Date().toLocaleDateString("en-IN", options);
-};
-
-function BlogLayout({ title, children }) {
+function BlogLayout({ title, children, date }) {
   return (
     <div className="min-h-screen flex flex-col">
 
       {/* Main Content Animation */}
       <motion.div
-        className="flex-grow max-w-4xl mx-auto px-6 py-12 w-full"
+        className="flex-grow max-w-6xl mx-auto px-6 py-12 w-full"
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -31,7 +26,7 @@ function BlogLayout({ title, children }) {
             {title}
           </h1>
 
-          <span className="text-sm text-gray-600">{getFormattedDate()}</span>
+          <span className="text-sm text-gray-600">{date}</span>
         </div>
 
         {/* Divider */}

@@ -18,6 +18,19 @@ function Home() {
           title="Old vs New Tax Regime Comparison - FY25-26"
           description="Interactive graph to tell you which Regime to choose ..."
           to="/taxviz"
+          image=""
+        />
+        <BlogCard
+          title="Primer on wave arrays"
+          description="Some proofs on waves in arrays ..."
+          to="/waveArray"
+          image=""
+        />
+        <BlogCard
+          title="Rank-Selection duality"
+          description="Rank problem is solvable in O(n), what about Selection Problem? ..."
+          to="/rankSelection"
+          image=""
         />
         {/* <BlogCard
           title="Add more ..."
