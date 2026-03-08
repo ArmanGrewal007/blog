@@ -4,10 +4,10 @@ import { useState } from "react";
 function BlogCard({ title, date, to, image }) {
   const [iframeLoaded, setIframeLoaded] = useState(false);
 
-  // Construct iframe URL correctly considering the base URL
+  // Construct iframe URL correctly considering the base URL and HashRouter
   const baseUrl = import.meta.env.BASE_URL || "/";
   const cleanTo = to.startsWith("/") ? to.slice(1) : to;
-  const iframeSrc = `${baseUrl}${cleanTo}`;
+  const iframeSrc = `${baseUrl}#/${cleanTo}`;
 
   // Format date correctly
   const formattedDate = date
