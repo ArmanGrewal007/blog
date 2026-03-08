@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { calculateCenterOfMass } from './utils';
+import { calculateCenterOfMass } from '../utils';
 
 export function useCentrifuge(initialN = 12) {
   const [N, setNState] = useState(initialN);

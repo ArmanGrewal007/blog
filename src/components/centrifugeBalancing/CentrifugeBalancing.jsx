@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useCentrifuge } from './useCentrifuge';
+import { useCentrifuge } from './hooks/useCentrifuge';
 
 export default function CentrifugeBalancing() {
   const { N, setN, tubes, toggleTube, clearAll, comX, comY, isBalanced, totalMass } = useCentrifuge(12);

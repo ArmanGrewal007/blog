@@ -68,7 +68,7 @@ function BlogCard({ title, date, to, image }) {
 
         {/* Floating Date Badge */}
         {formattedDate && (
-          <div className="absolute top-5 right-5 z-20 bg-white/95 backdrop-blur-md px-4 py-2 rounded-full text-xs font-bold text-gray-800 shadow-sm border border-gray-100/50 transition-transform duration-500 group-hover:scale-105">
+          <div className="absolute top-3 right-3 z-20 bg-white/95 backdrop-blur-md px-4 py-2 rounded-full text-xs font-bold text-gray-800 shadow-sm border border-gray-100/50 transition-transform duration-500 group-hover:scale-105">
             {formattedDate}
           </div>
         )}
