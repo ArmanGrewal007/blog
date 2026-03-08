@@ -9,7 +9,7 @@ export default function CentrifugeBalancing() {
   const center = 150;
 
   return (
-    <div className="flex flex-col items-center justify-center p-6 backdrop-blur-md rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] text-gray-900 w-full max-w-2xl mx-auto bg-orange-50/30 border border-orange-900/10 my-8 relative overflow-hidden">
+    <div className="flex flex-col items-center justify-center p-6 backdrop-blur-xl rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] text-gray-900 w-full max-w-2xl mx-auto bg-orange-50/30 border border-orange-900/10 my-8 relative overflow-hidden">
       <h2 className="text-2xl font-bold mb-4 text-gray-900">Centrifuge Simulator</h2>
 
       <div className="flex flex-col sm:flex-row items-center gap-6 mb-8 w-full justify-between">

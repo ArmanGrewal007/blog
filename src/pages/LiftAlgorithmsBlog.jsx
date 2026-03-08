@@ -31,15 +31,6 @@ function LiftAlgorithmsBlog() {
 
       <LiftSimulation />
 
-      <div className="bg-slate-800 p-6 rounded-lg border border-slate-700 shadow-xl mb-6">
-        <h3 className="text-lg font-bold text-amber-400 mb-2">Comparing Efficiency</h3>
-        <p className="text-sm text-slate-300">
-          Not all scheduling algorithms are created equal! To see how they stack up against each other, try using the <strong>Run Benchmark</strong> feature in the simulator above. This queues up the identical set of requests (Floors 9, 2, 8, 3, 7).
-        </p>
-        <p className="text-sm text-slate-300 mt-2">
-          Watch the <strong>Distance</strong> metric closely. You'll observe that <strong>SCAN</strong> and <strong>SSTF</strong> typically complete the exact same trips in far fewer floors traversed compared to the naive <strong>FCFS</strong> approach!
-        </p>
-      </div>
     </BlogLayout>
   );
 }

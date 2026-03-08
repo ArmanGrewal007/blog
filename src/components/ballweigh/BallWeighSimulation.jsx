@@ -36,7 +36,7 @@ function BallWeighSimulation() {
     // Actually SetupScreen has "min-h-screen" in its layout. We can just let it render, but 
     // maybe we should patch that inside SetupScreen? For now we'll just render it.
     return (
-      <div className="w-full flex-1 relative rounded-3xl overflow-hidden bg-orange-50/30 border border-orange-900/10 shadow-[0_8px_32px_rgba(0,0,0,0.08)]">
+      <div className="w-full flex-1 relative rounded-3xl backdrop-blur-xl overflow-hidden bg-orange-50/30 border border-orange-900/10 shadow-[0_8px_32px_rgba(0,0,0,0.08)]">
         <SetupScreen onStart={startGame} />
       </div>
     );

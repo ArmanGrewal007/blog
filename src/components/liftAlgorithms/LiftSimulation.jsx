@@ -153,7 +153,7 @@ function LiftSimulation() {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-6  backdrop-blur-xl rounded-2xl bg-orange-50/30 border border-orange-900/10 text-white my-10 overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.08)]">
+    <div className="w-full max-w-4xl mx-auto p-6 backdrop-blur-xl rounded-2xl bg-orange-50/30 border border-orange-900/10 text-white my-10 overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.08)]">
 
       {/* Settings Panel */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4 border-b border-slate-700 pb-4">
@@ -316,7 +316,7 @@ function LiftSimulation() {
         </div>
 
       </div>
-    </div>
+    </div >
   );
 }
 
