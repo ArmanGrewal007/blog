@@ -27,7 +27,7 @@ export default function HairyBallTheoremBlog() {
           vanishes entirely. There must be at least one <strong>bald spot</strong>.
         </p>
 
-        <h3 className="text-xl font-bold mt-4 text-gray-900">Formal Statement</h3>
+        <h2 id="formal-statement" className="text-xl font-bold mt-4 text-gray-900">Formal Statement</h2>
 
         <p>
           More precisely, the theorem states that there is no nonvanishing continuous tangent vector
@@ -43,7 +43,7 @@ export default function HairyBallTheoremBlog() {
           <InlineMath math="v(p) \cdot p = 0" /> ensures that every vector is tangent to the sphere.
         </p>
 
-        <h3 className="text-xl font-bold mt-4 text-gray-900">Why Does It Happen?</h3>
+        <h2 id="why-does-it-happen" className="text-xl font-bold mt-4 text-gray-900">Why Does It Happen?</h2>
 
         <p>
           The deep reason is <strong>topological</strong>. The Euler characteristic of{" "}
@@ -58,7 +58,7 @@ export default function HairyBallTheoremBlog() {
           draw continuous tangent vectors everywhere on a doughnut with no bald spots.
         </p>
 
-        <h3 className="text-xl font-bold mt-4 text-gray-900">Real-World Consequences</h3>
+        <h3 id="real-world-consequences" className="text-xl font-bold mt-4 text-gray-900">Real-World Consequences</h3>
 
         <ul className="list-disc pl-6 space-y-2">
           <li>
@@ -76,7 +76,7 @@ export default function HairyBallTheoremBlog() {
           </li>
         </ul>
 
-        <h3 className="text-xl font-bold mt-4 text-gray-900">Interactive Simulation</h3>
+        <h2 id="interactive-simulation" className="text-xl font-bold mt-4 text-gray-900">Interactive Simulation</h2>
 
         <p>
           The simulator below covers a sphere in 2 000 tiny hairs.
@@ -90,7 +90,7 @@ export default function HairyBallTheoremBlog() {
           <HairyBallSimulator />
         </div>
 
-        <h3 className="text-xl font-bold mt-4 text-gray-900">Understanding the Fields</h3>
+        <h3 id="understanding-the-fields" className="text-xl font-bold mt-4 text-gray-900">Understanding the Fields</h3>
 
         <ul className="list-disc pl-6 space-y-2">
           <li>
@@ -112,7 +112,7 @@ export default function HairyBallTheoremBlog() {
           </li>
         </ul>
 
-        <h3 className="text-xl font-bold mt-4 text-gray-900">The Poincaré–Hopf Theorem</h3>
+        <h2 id="the-poincare-hopf-theorem" className="text-xl font-bold mt-4 text-gray-900">The Poincaré-Hopf Theorem</h2>
 
         <p>
           The Hairy Ball Theorem is actually a corollary of a much more general result. If{" "}

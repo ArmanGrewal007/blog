@@ -14,7 +14,7 @@ export default function AeroplaneBoardingMethodsBlog() {
       <div className="flex flex-col gap-6 text-[15px] leading-relaxed mb-10 w-[95%] mx-auto text-gray-800">
         <div>
           Boarding an airplane is a complex process often constrained by human behavior, physical space (the aisle), and luggage stowage. Which boarding method is actually the fastest?
-          <h3 className="text-xl font-bold mt-4 text-gray-900">Standard Boarding Methods</h3>
+          <h2 id="standard-boarding-methods" className="text-xl font-bold mt-4 text-gray-900">Standard Boarding Methods</h2>
           Various airlines have attempted different boarding methods over the years:
 
           <ul className="list-disc pl-6">

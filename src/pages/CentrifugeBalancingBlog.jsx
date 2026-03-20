@@ -21,7 +21,7 @@ export default function CentrifugeBalancingBlog() {
           But how do we know if a specific configuration of test tubes is balanced?
         </p>
 
-        <h3 className="text-xl font-bold mt-4 text-gray-900">Physics Vector Summation</h3>
+        <h2 id="physics-vector-summation" className="text-xl font-bold mt-4 text-gray-900">Physics Vector Summation</h2>
 
         <p>
           When solving the centrifuge balancing problem, it's helpful to model the rotor as a 2D plane.
@@ -45,7 +45,7 @@ export default function CentrifugeBalancingBlog() {
           <CentrifugeBalancing />
         </div>
 
-        <h3 className="text-xl font-bold mt-4 text-gray-900">Solving with Divisors</h3>
+        <h2 id="solving-with-divisors" className="text-xl font-bold mt-4 text-gray-900">Solving with Divisors</h2>
 
         <p>
           A more formal way to look at this problem involves the factors of the number of holes, <InlineMath math="N" />.

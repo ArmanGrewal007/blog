@@ -77,7 +77,7 @@ function BallWeighSimulation() {
     <div className="w-full flex flex-col items-center px-2 sm:px-4 py-8 gap-6 rounded-3xl bg-gradient-to-br from-[#f8f0e0] to-[#f0e4d0] border border-orange-900/10 relative overflow-hidden">
       {/* Header Optional (can be removed if the host page provides title) */}
       <div className="text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">BallWeigh Simulation</h2>
+        <h2 id="ballweigh-simulation" className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">BallWeigh Simulation</h2>
         <p className="text-sm opacity-60 mt-2 font-medium">Find the odd ball</p>
       </div>
 

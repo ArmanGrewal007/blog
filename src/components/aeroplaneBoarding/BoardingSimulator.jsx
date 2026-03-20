@@ -209,7 +209,7 @@ export default function BoardingSimulator() {
         <div className="flex flex-col xl:flex-row items-center justify-between gap-4 border-b border-slate-700 pb-6 mb-6 w-full max-w-5xl mx-auto">
 
           <div className="text-center xl:text-left flex-shrink-0">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 tracking-tight leading-tight">Aeroplane Boarding Simulator</h2>
+            <h3 id="aeroplane-boarding-simulator" className="text-2xl md:text-3xl font-bold text-gray-800 tracking-tight leading-tight">Aeroplane Boarding Simulator</h3>
           </div>
 
 

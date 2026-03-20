@@ -23,7 +23,7 @@ export default function JosephusProblemBlog() {
           Josephus, so the story goes, quickly computed where to stand — and survived.
         </p>
 
-        <h3 className="text-xl font-bold mt-4 text-gray-900">Problem Statement</h3>
+        <h2 id="problem-statement" className="text-xl font-bold mt-4 text-gray-900">Problem Statement</h2>
 
         <p>
           Given <InlineMath math="n" /> people standing in a circle numbered
@@ -43,7 +43,7 @@ export default function JosephusProblemBlog() {
           <JosephusProblem />
         </div>
 
-        <h3 className="text-xl font-bold mt-4 text-gray-900">The Recurrence Relation</h3>
+        <h2 id="the-recurrence-relation" className="text-xl font-bold mt-4 text-gray-900">The Recurrence Relation</h2>
 
         <p>
           The Josephus problem has a beautiful recursive solution. Let <InlineMath math="J(n, k)" /> denote
@@ -62,7 +62,7 @@ export default function JosephusProblemBlog() {
           then take <InlineMath math="\bmod\; n" /> to wrap around.
         </p>
 
-        <h3 className="text-xl font-bold mt-4 text-gray-900">Special Case: <InlineMath math="k = 2" /></h3>
+        <h2 id="special-case-k-2" className="text-xl font-bold mt-4 text-gray-900">Special Case: <InlineMath math="k = 2" /></h2>
 
         <p>
           When <InlineMath math="k = 2" />, there is a stunning closed-form solution.
@@ -79,7 +79,7 @@ export default function JosephusProblemBlog() {
           is <InlineMath math="2L + 1" /> (using 1-indexed positions).
         </p>
 
-        <h3 className="text-xl font-bold mt-4 text-gray-900">Implementation</h3>
+        <h2 id="implementation" className="text-xl font-bold mt-4 text-gray-900">Implementation</h2>
 
         <p>
           The iterative solution runs in <InlineMath math="\color{green}\mathbf{O(n)}" /> time
@@ -110,7 +110,7 @@ export default function JosephusProblemBlog() {
     return 2 * L + 1`}
         />
 
-        <h3 className="text-xl font-bold mt-4 text-gray-900">Complexity Analysis</h3>
+        <h2 id="complexity-analysis" className="text-xl font-bold mt-4 text-gray-900">Complexity Analysis</h2>
 
         <ul className="list-disc pl-6 space-y-1">
           <li>

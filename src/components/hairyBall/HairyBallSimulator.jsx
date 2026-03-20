@@ -478,9 +478,9 @@ export default function HairyBallSimulator() {
         {/* ── Header & Controls ── */}
         <div className="flex flex-col xl:flex-row items-center justify-between gap-4 border-b border-slate-700 pb-6 mb-4 w-full max-w-5xl mx-auto">
           <div className="text-center xl:text-left flex-shrink-0">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 tracking-tight leading-tight">
+            <h3 id="hairy-ball-simulator" className="text-2xl md:text-3xl font-bold text-gray-800 tracking-tight leading-tight">
               Hairy Ball Simulator
-            </h2>
+            </h3>
           </div>
 
           <div className="flex gap-3 items-center w-full sm:w-auto justify-center flex-wrap">

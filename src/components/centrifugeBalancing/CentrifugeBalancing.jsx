@@ -10,7 +10,7 @@ export default function CentrifugeBalancing() {
 
   return (
     <div className="flex flex-col items-center justify-center p-6 backdrop-blur-xl rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] text-gray-900 w-full max-w-2xl mx-auto bg-orange-50/30 border border-orange-900/10 my-8 relative overflow-hidden">
-      <h2 className="text-2xl font-bold mb-4 text-gray-900">Centrifuge Simulator</h2>
+      <h3 id="centrifuge-simulator" className="text-2xl font-bold mb-4 text-gray-900">Centrifuge Simulator</h3>
 
       <div className="flex flex-col sm:flex-row items-center gap-6 mb-8 w-full justify-between">
         <div className="flex flex-col gap-2 w-full sm:w-1/2">

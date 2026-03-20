@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useRef } from "react";
+import ScrollToTop from "./ScrollToTop";
+import TableOfContents from "./TableOfContents";
 
 function BlogLayout({ title, children, date }) {
+  const contentRef = useRef(null);
+
   return (
     <div className="min-h-screen flex flex-col">
 
@@ -29,11 +34,14 @@ function BlogLayout({ title, children, date }) {
           <span className="text-sm text-gray-600">{date}</span>
         </div>
 
+        {/* Table of Contents */}
+        <TableOfContents contentRef={contentRef} />
+
         {/* Divider */}
         <hr className="mb-8 border-gray-800" />
 
         {/* Blog Content */}
-        <div className="prose prose-lg max-w-none text-gray-800">
+        <div ref={contentRef} className="prose prose-lg max-w-none text-gray-800">
           {children}
         </div>
 
@@ -51,6 +59,9 @@ function BlogLayout({ title, children, date }) {
           <Link to="/" className="hover:underline">Home</Link>
         </div>
       </motion.footer>
+
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
 
     </div>
   );
