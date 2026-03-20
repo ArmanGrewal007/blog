@@ -9,7 +9,7 @@ const TableOfContents = ({ contentRef }) => {
 
   useEffect(() => {
     if (contentRef.current) {
-      const headings = Array.from(contentRef.current.querySelectorAll("h2, h3"));
+      const headings = Array.from(contentRef.current.querySelectorAll("h2, h3, h4"));
       const tocItems = headings.map((h, i) => {
         if (!h.id) {
           // Create a clean ID from text
@@ -89,7 +89,7 @@ const TableOfContents = ({ contentRef }) => {
           {toc.map((item) => (
             <li
               key={item.id}
-              className={`${item.level === 3 ? "ml-6" : "ml-0"} group`}
+              className={`${item.level === 3 ? "ml-6" : item.level === 4 ? "ml-12" : "ml-0"} group`}
             >
               <a
                 href={`#${location.pathname}${location.search}#${item.id}`}
